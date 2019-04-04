@@ -37,7 +37,7 @@
         #第T个时间片，看看每个路口有没有车能够上路(出发时间大于T的车辆一定不能上路，小于等于T的车辆有可能上路)
         carsInGarage(transport, garage, dist, Map, carSchedule, T, cars, roads, carRoute)
 
-三、其他说明:
+三、其他说明：
     该代码最主要的部分就是carsInsideRoad、carsAcrossRoad、carsInGarage这三个函数。关于车辆的路径规划问题(对于每辆车判断下一次如何转向)。代码中是根据距离最短来做的，也就是turningOfCar这个函数，和从出车库放车上路时carsInGarage中如下的代码部分：
             
             temp=float('inf')
